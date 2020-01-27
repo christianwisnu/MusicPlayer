@@ -69,6 +69,7 @@ public class MusicPlayer extends Activity implements MediaPlayer.OnCompletionLis
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mHandler.removeCallbacks(mUpdateTimeTask);
                 mp.release();
                 finish();
             }
@@ -144,7 +145,7 @@ public class MusicPlayer extends Activity implements MediaPlayer.OnCompletionLis
         // Play song
         try {
             mp.reset();
-            mp = MediaPlayer.create(this, R.raw.lagu);
+            mp = MediaPlayer.create(this, R.raw.lagu2);
             mp.start();
             // Displaying Song title
             //songTitleLabel.setText("TESTER");
@@ -227,6 +228,7 @@ public class MusicPlayer extends Activity implements MediaPlayer.OnCompletionLis
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_HOME) {
+            mHandler.removeCallbacks(mUpdateTimeTask);
             mp.release();
             finish();
             return true;

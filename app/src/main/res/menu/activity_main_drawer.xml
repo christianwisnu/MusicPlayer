@@ -7,13 +7,9 @@
             android:icon="@drawable/ic_menu_send"
             android:title="Music" />
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="About Me" />
-        <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/youtube"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="NN" />
+            android:title="Chaneel Youtube" />
     </group>
 
 </menu>
