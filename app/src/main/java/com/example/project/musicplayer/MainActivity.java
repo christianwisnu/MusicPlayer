@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(this, MusicPlayer.class);
             startActivity(i);
         } else if (id == R.id.youtube) {
-            watchYoutubeVideo("");
+            watchYoutubeVideo("9Zu_845tBXw");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
