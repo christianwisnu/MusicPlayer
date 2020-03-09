@@ -5,11 +5,11 @@
         <item
             android:id="@+id/nav_music"
             android:icon="@drawable/ic_menu_send"
-            android:title="Music" />
+            android:title="Relaksasi Otot" />
         <item
             android:id="@+id/youtube"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Chaneel Youtube" />
+            android:title="Turorial Relaksasi Otot" />
     </group>
 
 </menu>

@@ -11,6 +11,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -24,5 +27,8 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.0.0'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.mzule.fantasyslide:library:1.0.5'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'me.imid.swipebacklayout.lib:library:1.0.0'
     testImplementation 'junit:junit:4.12'
 }
